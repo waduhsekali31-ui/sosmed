@@ -7,6 +7,7 @@ app = create_app(os.getenv('FLASK_ENV', 'development'))
 
 @app.shell_context_processor
 def make_shell_context():
+    """Add objects to the shell context"""
     return {
         'db': db,
         'User': User,

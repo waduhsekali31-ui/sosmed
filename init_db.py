@@ -1,3 +1,8 @@
+#!/usr/bin/env python
+"""
+Database initialization script
+Create and populate initial data
+"""
 import os
 import sys
 from app import create_app
